@@ -1,0 +1,21 @@
+.bleu {
+    background-color: #66A9B1;
+    height: 20%;
+    text-align: center;
+    
+}
+
+.menu {
+    background-color: #FBFCB0;
+    height: 10%;
+    text-align: center;
+}
+
+.infosComplementaires {
+    background-color: #C3CBC5;
+}
+
+.partieCentrale {
+    background-color: #F9CB37;
+    height: 70%;
+}
