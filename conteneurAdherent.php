@@ -1,7 +1,7 @@
 <?php
 include'adherent.php';
 
-Class conteneurEquipe
+Class conteneurAdherent
 {
     private $lesAdherents;
     public function __construct()
@@ -9,7 +9,7 @@ Class conteneurEquipe
         $this->$lesAdherents = new arrayObject();
     }
 
-    public function ajouteUnAdherent($unIdAdherent, $unNomAdherent, $unPrenomAdherent, $unAgeAdherent, $unSexeAdherent)
+    public function ajouterUnAdherent($unIdAdherent, $unNomAdherent, $unPrenomAdherent, $unAgeAdherent, $unSexeAdherent)
     {
         $unAdherent = new adherent($unIdAdherent, $unNomAdherent, $unPrenomAdherent, $unAgeAdherent, $unSexeAdherent);
         $this->lesAdherents->append($unAdherent);
