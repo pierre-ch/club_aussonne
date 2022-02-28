@@ -9,9 +9,9 @@ Class conteneurAdherent
         $this->$lesAdherents = new arrayObject();
     }
 
-    public function ajouterUnAdherent($unIdAdherent, $unNomAdherent, $unPrenomAdherent, $unAgeAdherent, $unSexeAdherent)
+    public function ajouterUnAdherent($unIdAdherent, $unNomAdherent, $unPrenomAdherent, $unAgeAdherent, $unSexeAdherent, $lEquipe)
     {
-        $unAdherent = new adherent($unIdAdherent, $unNomAdherent, $unPrenomAdherent, $unAgeAdherent, $unSexeAdherent);
+        $unAdherent = new adherent($unIdAdherent, $unNomAdherent, $unPrenomAdherent, $unAgeAdherent, $unSexeAdherent, $lEquipe);
         $this->lesAdherents->append($unAdherent);
     }
 
@@ -25,7 +25,7 @@ Class conteneurAdherent
         $liste = "";
         foreach ($this->lesAdherents as $unAdherent)
         {
-            $liste = $liste.'Adhèrent : '.$unAdherent->getNomAdherent().'><br>';
+            $liste = $liste.'Adhèrent : '.$unAdherent->afficheAdherent().'><br>';
         }
         return $liste;
     }

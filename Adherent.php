@@ -7,14 +7,16 @@ Class adherent
     private $prenomAdherent;
     private $ageAdherent;
     private $sexeAdherent;
+    private $lEquipe;
 
-    public function __construct($unIdAdherent, $unNomAdherent, $unPrenomAdherent, $unAgeAdherent, $unSexeAdherent)
+    public function __construct($unIdAdherent, $unNomAdherent, $unPrenomAdherent, $unAgeAdherent, $unSexeAdherent, $uneEquipe)
     {
         $this->idAdherent = $unIdAdherent;
         $this->nomAdherent = $unNomAdherent;
         $this->prenomAdherent = $unPrenomAdherent;
         $this->ageAdherent = $unAgeAdherent;
         $this->sexeAdherent = $unSexeAdherent;
+        $this->lEquipe = $uneEquipe;
     }
 
     //get
@@ -38,6 +40,10 @@ Class adherent
     {
         return $this->sexeAdherent;
     }
+    public function getlEquipeDelAdherent()
+    {
+        return $this->lEquipe;
+    }
 
     //set
     public function setIdAdherent($unIdAdherent)
@@ -60,6 +66,10 @@ Class adherent
     {
         $this->sexeAdherent = $unSexeAdherent;
     }
+    public function setlEquipeDeLAdherent()
+    {
+        $this->lEquipe = $uneEquipe;
+    }
 
     public function afficheAdherent()
     {
@@ -67,6 +77,7 @@ Class adherent
         echo ' - '.$this->getPrenomAdherent().'<br>';
         echo ' - '.$this->getAgeAdherent().' ans<br>';
         echo ' - '.$this->getSexeAdherent(). '<br><br>';
+        echo ' - '.$this->getlEquipeDelAdherent()->getNomEquipe();
     }
 
 }
