@@ -8,7 +8,7 @@ Class conteneurEquipe
     {
         $this->lesEquipes = new arrayObject();
     }
-    public function ajouteUneEquipe($unIdEquipe, $unNomEquipe, $unNbrPlaceEquipe, $unAgeMinEquipe, $unAgeMaxEquipe, $unSexeEquipe)
+    public function ajouterUneEquipe($unIdEquipe, $unNomEquipe, $unNbrPlaceEquipe, $unAgeMinEquipe, $unAgeMaxEquipe, $unSexeEquipe)
     { 
         $uneEquipe = new equipe($unIdEquipe, $unNomEquipe, $unNbrPlaceEquipe, $unAgeMinEquipe, $unAgeMaxEquipe, $unSexeEquipe);
         $this->lesEquipes->append($uneEquipe);
