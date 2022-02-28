@@ -70,6 +70,16 @@ Class equipe
     {
         $this->SexeEquipe = $unSexeEquipe;
     }
+
+    public function afficheEquipe()
+    {
+        echo '<strong><u>Équipe :</u> '.$this->getNomEquipe().'</strong><br>';
+        echo ' - '.$this->getNbrPlaceEquipe().' places dans léquipe <br>';
+        echo ' - '.$this->getAgeMinEquipe().' pour les plus jeunes <br>';
+        echo ' - '.$this->getAgeMaxEquipe(). ' pour les plus vieux <br>';
+        echo ' - '.$this->getSexeEquipe(). ' (M=équipe masculine et F=équipe féminine)<br><br>';
+    }
+
 }
 
 ?>

@@ -60,6 +60,15 @@ Class adherent
     {
         $this->sexeAdherent = $unSexeAdherent;
     }
+
+    public function afficheAdherent()
+    {
+        echo '<strong><u>Adhérent :</u> '.$this->getNomAdherent().'</strong><br>';
+        echo ' - '.$this->getPrenomAdherent().'<br>';
+        echo ' - '.$this->getAgeAdherent().' ans<br>';
+        echo ' - '.$this->getSexeAdherent(). '<br><br>';
+    }
+
 }
 
 ?>
