@@ -6,7 +6,7 @@ Class conteneurAdherent
     private $lesAdherents;
     public function __construct()
     {
-        $this->$lesAdherents = new arrayObject();
+        $this->lesAdherents = new arrayObject();
     }
 
     public function ajouterUnAdherent($unIdAdherent, $unNomAdherent, $unPrenomAdherent, $unAgeAdherent, $unSexeAdherent, $lEquipe)

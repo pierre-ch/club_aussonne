@@ -42,7 +42,19 @@ Class conteneurEquipe
 
     public function donneObjetEquipeDepuisNumero($unIdEquipe)
     {
-        $trouve = false;
+        echo 'Je veux Id de lequipe que je passe '.$unIdEquipe;
+        $laBonneEquipe = null;
+        foreach($this->lesEquipes as $lEquipe)
+        {
+            if($lEquipe->getIdEquipe() == $unIdEquipe)
+            {
+                $laBonneEquipe=$lEquipe;
+            }
+        }
+
+        return $laBonneEquipe;
+
+        /*$trouve = false;
         $laBonneEquipe = null;
         $idEquipe = $this->lesEquipes->getIterator();
         while ((!$trouve)&&($idEquipe->valid()))
@@ -58,6 +70,7 @@ Class conteneurEquipe
             }
             return $laBonneEquipe;
         }
+        */
     }
 
 }
